@@ -9,7 +9,9 @@ app.get('/', function(req, res){
 })
 app.post('/', (req, res)=>{
   const ville = req.body.ville_name;
-  const key = "f3c9c274dd8c07d7e58b10982e970b01";
+  //entrer votre cle ci desous vous pouvez utliliser https://openweathermap.org/api pour creer 
+  //votre compte et votre clé et ajouter en dessous.
+  const key = "";
   const pays = req.body.codePays;
   const url = `https://api.openweathermap.org/data/2.5/weather?units=metric&appid=${key}&q=${ville},${pays}`;
   
